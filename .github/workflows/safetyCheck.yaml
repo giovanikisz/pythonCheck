@@ -11,13 +11,16 @@ on:
       - master
       - main
 
+env:
+  DEP_PATH: src/requirements.txt
+
 jobs:
   python-safety-test:
 
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out master
+      - name: Check out master
         uses: actions/checkout@master
 
       - name: Security vulnerabilities scan
