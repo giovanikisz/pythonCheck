@@ -11,9 +11,6 @@ on:
       - master
       - main
 
-env:
-  DEP_PATH: src/requirements.txt
-
 jobs:
   python-safety-test:
 
